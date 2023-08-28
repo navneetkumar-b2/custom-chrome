@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(48, 48, 58);
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* border: 2px dotted yellow; */
+    width: 100vw;
+    height: 25vh;
+    
+    }
+  
+.motivation{
+    /* border: 1px solid red; */
+    width: 60vw;
+    height: 20vh;
+    margin: 2px;
+    margin-left: 17px;
+    padding: 2px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 2rem;
+/* display: inline-block; */
+    position: relative;
+    /* top: 50px;  creating problem when displaying it as flex item by justify content and align-items: ; */
+    /* margin: auto ;  creating same problem as above*/
+    animation: shake infinite ease 3s ;
+}
+
+
+
+/* clock design */
+.cc{
+    /* width: 300px; */
+    /* height: 300px; */
+    /* border: 2px solid red; */
+    /* position: relative; */
+    margin: auto 10px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#prnt-tme{
+    margin-right: 40px;
+    font-size: 4rem;
+}
+#clockContainer {
+    position: absolute;
+    /* width: 300px; Adjust the width as needed */
+    /* height: 300px; Adjust the height as needed */
+    background: url(clock.png) no-repeat;
+    background-size: 100%; /* Use 100% to cover the entire clockContainer */
+}
+
+#hour, #minute, #second {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom center; /* Center the rotation point */
+}
+
+#hour {
+    width: 2%;
+    height: 12%;
+    top: 44%;
+    left: 49%;
+    opacity: 0.8;
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+#minute {
+    width: 1.6%;
+    height: 30%;
+    top: 34%;
+    left: 49.2%;
+    opacity: 0.8;
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+#second {
+    width: 1%;
+    height: 40%;
+    top: 26%;
+    left: 49.5%;
+    opacity: 0.8;
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+/* moti_and_clock */
+
+/* google search */
+.search-container {
+/* border: 2px solid yellowgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+    height: 25vh;
+  }
+  
+  #search-input {
+    width: 400px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* box-shadow: 5px; */
+  }
+  
+  #search-button {
+    margin-left: 20px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* box-shadow: 5px; */
+  }
+  #search-input:hover{
+    box-shadow: 15px 6px 20px ghostwhite ;
+  }
+  #search-button:hover{
+    box-shadow: 7px 4px 8px ghostwhite ;
+  }
+  @keyframes shake {
+    0%{
+        transform: translateX(6px);
+    }
+    12.5%{
+        transform: translateY(5px);
+    }
+    25%{
+        transform: translateX(-5px);
+    }
+    50%{
+        transform: translateY(-4px);
+    }
+    75%{
+        transform: translateX(4px);
+    }
+    100%{
+        transform: translatey(-5px);
+    }
+  }
